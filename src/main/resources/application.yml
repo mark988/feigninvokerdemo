@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: feignClientDemo
+
+bi:
+  host: https://general.guandata.com
+  token: ff8a0819f1cea40e3955aef7
+
+
+
+
+server:
+  tomcat:
+    connection-timeout: 120000 # 连接超时时间，单位毫秒，默认20秒
+    keep-alive-timeout: 120000 # HTTP请求读取超时时间，单位毫秒，默认不超时
+    accept-count: 100 # 接收新连接的线程最大空闲时间，单位毫秒，默认60秒
+    max-threads: 200 # 最大线程数，默认200
+    protocol-http2-enabled: true # 启用HTTP/2支持，默认根据环境自动决定
+    compression:
+      enabled: true # 响应内容压缩
+
+  compression:
+    enabled: true
+    min-response-size: 2048  # 可选，默认值是2048（2KB）
+    mime-types:
+      - application/json
+      - application/xml
+      - text/html
+      - text/xml
+      - text/plain
+      - text/css
+      - text/javascript
+      - application/javascript
