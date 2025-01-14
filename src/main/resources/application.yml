@@ -3,8 +3,8 @@ spring:
     name: feignClientDemo
 
 bi:
-  host: https://general.guandata.com
-  token: ff8a0819f1cea40e3955aef7
+  host: https://general.gd.com
+  token: ff8a0819f1cea40e3955aef7-1
 
 
 
